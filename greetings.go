@@ -2,6 +2,7 @@ package gogreetings
 
 import "fmt"
 
-func Hello() {
-	fmt.Println("Greetings!")
+func Hello(name string) string {
+	message := fmt.Sprintf("Hi, %v. Welcome!", name)
+	return message
 }
